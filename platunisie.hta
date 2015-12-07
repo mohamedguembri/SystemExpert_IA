@@ -1,0 +1,139 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML	Lang="fr">
+<HEAD>
+<style>
+body {background-color:lightgrey}
+h1   {color:blue}
+p    {color:black}
+</style>
+<!÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷>
+<meta 	http-equiv="content-Language" 
+	content="fr-FR">
+<meta 	http-equiv="content-type" 
+	content="text/html; charset=ISO-8859-1" />
+<!÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷>
+<!÷÷÷÷÷                                   ÷÷÷÷÷÷÷>
+<TITLE> PlatTunisie </TITLE>
+<!÷÷÷÷÷                                   ÷÷÷÷÷÷÷>
+<!÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷>
+<LINK	REL="stylesheet"
+	TYPE="text/css"
+	HREF="platcss.css">
+<!÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷>
+<Script Type="Text/JavaScript"
+	Src="platjs.js"></Script>
+<!÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷>
+<hta:Application
+	ApplicationName="PlaTunisie"
+	Border="thick"
+	BorderStyle="Normal"
+	Caption="yes"
+	ContextMenu="yes"
+	Icon="client.ico"
+	id="ChahiaTayyba"
+	InnerBorder="no"
+	MaximizeButton="yes"
+	MinimizeButton="yes"
+	Navigable="no"
+	Scroll="yes"
+	ScrollFlat="no"
+	Selection="yes"
+	ShowInTaskBar="yes"
+	SingleInstance="no"
+	SysMenu="yes"
+	WindowState="normal"/>
+</HEAD>
+<!÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷>
+<BODY  	Style="	Font-Family:Verdana;
+		Font-Size:16px;
+		Font-Weight:bold;
+Font-Color:white;
+		filter:progid:DXImageTransform.Microsoft.Gradient
+                 (	gradientType=0,
+			startColorStr='#FFCC99',endColorStr='#CCAAE0');"
+	Scroll="yes"
+	FGColor="#400040" 
+	background="plattunisie.jpg"
+	LeftMargin=3
+	TopMargin=3
+	MarginWidth=3
+	MarginHeight=3>
+<!÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷>
+<a	name="MoiRef"
+	href="mailto:mohamed.guembri@esprit.tn?subject=">
+	<img	src="esprit.png"
+		name="MoiGif"
+		alt=""
+		style="cursor:hand;border:0"/></a>
+<center>
+<p>Les régles du jeux sont très simples à comprendre:</p> <br/>
+<p>vous pensez à un plat tunisien,</p><br/>
+<p>je vais tenter de le découvrir.</p><br/>
+<p>Si je ne trouve pas, je vous poserai quelques questions</p><br/>
+<p>qui me permettront de le connaître définitivement.</p><br/>
+</center>
+<form	name="frm">
+</form>
+
+
+
+
+
+
+<!÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷>
+<Script Type="Text/JavaScript">
+
+
+<!--------
+	//~~~~~~~~~~~~~~~~~~~~
+	//~~ Initialisation ~~
+	//~~~~~~~~~~~~~~~~~~~~
+
+
+
+	var lm=new Array(	"Janvier","Février","Mars",
+				"Avril","Mai","Juin",
+				"Juillet","Août","Septembre",
+				"Octobre","Novembre","Décembre");
+	document.title+=" " +
+		lm[Number(document.lastModified.substr(0,2))-1] +
+		" " +
+                document.lastModified.substr(6,4) +
+		" " +
+		document.title.substr(0,1);
+	MoiGif.alt=document.title;
+	MoiRef.href=MoiRef.href+document.title;
+	
+	
+
+	var fso=new ActiveXObject("Scripting.FileSystemObject");
+	var url=unescape(self.location.pathname);
+	var adr=(fso.GetExtensionName(url).toLowerCase()!='hta')?1:0;
+	var dir=fso.GetParentFolderName(url).substr(adr);
+	var prm=dir + "\\" + fso.GetBaseName(url) + ".ini";
+
+
+
+
+
+
+	var ts=fso.OpenTextFile(prm,1,false);	/////////////////////////
+	var a,lu,n,tmp;				// charger les plats//
+	var plats=new Array();		/////////////////////////
+	while (!ts.AtEndOfStream)
+	{ 	lu=ts.ReadLine();
+		if ( lu.length>0 )
+		{	tmp=lu.split("\t");
+			n=plats.length;
+			plats.length++;
+			plats[n]=new Array();
+			for ( a=0;a<tmp.length;a++ )
+			{	plats[n][a]=tmp[a];	}	}	}
+	ts.close();
+	var avant,actuel=0,SiON=0;
+	Affiche();
+//--------></Script>
+<!÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷>
+</BODY></HTML>
+<!÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷÷>

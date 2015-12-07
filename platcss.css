@@ -1,0 +1,48 @@
+/*============================================================*/
+body		{	scrollbar-face-color: #FFCC99;
+				scrollbar-highlight-color: #FFFFDD;
+				scrollbar-shadow-color: #FFFFDD;
+				scrollbar-3dlight-color: #FF6A22;
+				scrollbar-arrow-color: #FF6A22;
+				scrollbar-track-color: #FF6A22;
+				scrollbar-darkshadow-color: #FF6A22; }
+/*============================================================*/
+a:			{	text-decoration:underline;
+				font-weight:bold;
+				color:#505050; }
+
+a:link		{	text-decoration:underline;
+				font-weight:bold;
+				color:#400040; }
+a:visited	{	text-decoration:underline;
+				font-weight:bold;
+				color:#606060; }
+a:hover		{	text-decoration:none;
+				font-weight:bold;
+				background-color:#C0C000; }
+a:active	{	text-decoration:none;
+				font-weight:bold;
+				background-color:#CCFFFF; }
+/*============================================================*/
+button		{	border:1px solid #FF6A22;
+				background-color:#FFFFFF;
+				font-family:Verdana;
+				font-size:9px;
+				height:28px;
+				font-weight:bold; 
+				cursor:hand;	}
+img    		{	border:0;
+				cursor:hand;	}
+input 		{	border:1px solid #FF6A22;
+				background-color:#D1D1FF;
+				font-family:Verdana;
+				font-size:9px;
+				height:14px;
+				font-weight:bold;  }
+/*==========	InEo : 	Imprimer=non, Ecran=Visible
+						class="InEo" sur un objet ==========*/
+@media print
+			{.InEo	{	visibility:hidden;	}	}
+@media screen
+			{.InEo	{	visibility:visible;	}	}
+/*============================================================*/
